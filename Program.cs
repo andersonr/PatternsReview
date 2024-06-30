@@ -1,16 +1,12 @@
-﻿using ConsoleApp1.Adapter;
-using ConsoleApp1.Observer;
+﻿using ConsoleApp1.Builder;
 using System.Text;
 
 internal class Program
 {
-
-
-
     static void Main()
     {
-        var exec = new Executar();
-        exec.Main();
+        var exec = new ConsoleApp1.Builder.Executar();
+        exec.Run();
 
 
         Console.ReadKey();
